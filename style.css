@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: rgb(12, 12, 132);
+    color: white;
+    padding: 10px;
+}
+.heading{
+    display: flex;
+}
+header h1{
+    font-style: italic;
+    padding-left: 8px;
+}
+header span{
+    margin-top: 5px;
+}
+#addExpense, #history, #home{ 
+    background-color: rgb(234, 234, 238);
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+}
+#addSalary, #salary{
+    margin-right: 20px;
+    background-color: rgb(234, 234, 238);
+    border-radius: 5px;
+    padding: 11px;
+    outline: none;
+    border: none;
+
+}
+#addExpense:hover, #addSalary:hover, #history:hover, #home:hover{
+    background-color: rgb(12, 12, 132);
+    color: white;
+}
+
+
+#table-heading{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.box-group{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 25px;
+    margin: 15px;
+}
+.box{
+    padding: 15px;
+    border-radius: 10px; 
+    text-align: center;
+}
+.box1{
+    background-color: rgb(213, 241, 219);
+}
+.box2{
+    background-color: rgb(237, 207, 207);
+}
+.box3{
+    background-color: rgb(200, 222, 242);
+}
+.box4{
+    background-color: rgb(212, 204, 244);
+}
+.box5{
+    background-color: rgb(207, 222, 222);
+}
+.expense-table{
+    margin: 50px 20px 20px 20px;  
+}
+table{
+    width: 100%;
+    margin-top: 20px;
+}
+th,td{
+    padding: 10px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(234, 234, 238);
+}
+table th{
+    background-color: rgb(190, 241, 241);
+}
+
+
+    /* add Expense */
+
+.form-container{
+    margin: 40px; 
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-box{
+    margin-top: 15px;
+    width: 350px;
+    background-color: aliceblue;
+    padding: 15px;
+    
+}
+form{
+    margin-top: 20px;
+}
+label {
+    width: 150px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+button{
+    padding: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+#cancel{
+    background-color: rgb(213, 111, 111);
+}
+#submit{
+    background-color: rgb(162, 211, 162);
+}
+
+.history-table{
+    padding: 20px;
+}
+    
