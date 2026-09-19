@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=account_balance_wallet" />
+</head>
+<body>
+    <header>
+        <div class="heading">
+            <span class="material-symbols-outlined">account_balance_wallet</span>
+            <h1>Expense tracker</h1>
+        </div>
+        <p>Track your expense with own presense</p>
+    </header>
+    <main>
+        <div class="form-container">
+            <h1>+ Add Expense</h1>
+            <div class="form-box">
+                <h3>Enter your expense details....</h3>
+                <form action="" id="expenseForm">
+                    <div>
+                        <label for="description">Description</label>
+                        <input type="text" id="description" placeholder="Enter expense description" required>
+                    </div>
+
+                    <div>
+                        <label for="amount">Amount</label>
+                        <input type="number" id="amount" placeholder="Enter amount" required>
+                    </div>
+
+                    <div>
+                        <label for="category">Category</label>
+                        <select name="" id="category" required>
+                            <option value="">Select category</option>
+                            <option value="food">food</option>
+                            <option value="travel">travel</option>
+                            <option value="shopping">shopping</option>
+                            <option value="bills">bills</option>
+                            <option value="education">education</option>
+                            <option value="entertainment">entertainment</option>
+                            <option value="others">others</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="date">Date</label>
+                        <input type="date" id="date" required>
+                    </div>
+
+                    <div class="btn-grp">
+                        <button id="cancel" type="button" onclick="goBack()">Cancel</button>
+                        <button id="submit" type="submit">Submit</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
