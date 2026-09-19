@@ -25,6 +25,7 @@ if(expenseForm){
         localStorage.setItem("expenses",JSON.stringify(expenses));
         localStorage.setItem("history",JSON.stringify(history));
         window.location.href = "index.html";
+        
     });
 }
 
@@ -69,6 +70,7 @@ function salary() {
 
 //history
 let historyBody = document.getElementById("historyBody");
+let nrows = document.getElementById("nrows");
 if(historyBody){
     displayHistory();
 }
@@ -86,12 +88,15 @@ function displayHistory(){
         `;
         historyBody.appendChild(row);
     });
+    nrows.innerHTML= history.length;
 
 }
+
 
 //display expences
 
 let expenseBody = document.getElementById("expensebody");
+let rows = document.getElementById("rows");
 if(expenseBody){
     displayExpenses();
 }
@@ -126,12 +131,14 @@ function displayExpenses(){
         `;
         expenseBody.appendChild(row);
     });
+    rows.innerHTML = expenses.length;
 
     document.getElementById("total-expenses").innerText = "RS. "+ total;
     let balance = totalIncome - total;
     document.getElementById("balance").innerText = "RS. "+ balance;
     document.getElementById("extra-income").innerText = "RS. "+ extra;
     document.querySelector(".expense-table>h3").innerText = "Total rows: "+ expense.length;
+    
 }
 
 //delete
