@@ -1,1 +1,71 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=account_balance_wallet" />
+</head>
+<body>
+    <header>
+        <div class="heading">
+            <span class="material-symbols-outlined">account_balance_wallet</span>
+            <h1>Expense tracker</h1>
+        </div>
+        <p>Track your expense with own presense</p>
+    </header>
+    <div class="box-group">
+        <div class="box1 box">
+            <h3>Total income</h3>
+            <span id="total-income">Rs. 0</span>
+        </div>
+        <div class="box2 box">
+            <h3>Total expences</h3>
+            <span id="total-expenses">Rs. 0</span>
+        </div>
+        <div class="box3 box">
+            <h3>Balance</h3>
+            <span id="balance">Rs. 0</span>
+        </div>
+        <div class="box4 box">
+            <h3>Current month</h3>
+            <span id="monthly-salary">Rs. 0</span>
+        </div>
+        <div class="box5 box">
+            <h3>Extra income</h3>
+            <span id="extra-income">Rs. 0</span>
+        </div>
+    </div>
+    <div class="expense-table">
+        <div id="table-heading">
+            <h2>My Expenses</h2>
+            <div>
+                <button id="addSalary" type="button" onclick="addSalary()">+ Add salary</button>
+                <!-- <a id="addSalary" href="addSalary.html">+ Add expense</a> -->
+                <a id="addExpense" href="addexpense.html">+ Add expense</a>
+                <button id="salary" type="button" onclick="salary()">Monthly Salary</button>
+                <a id="history" href="history.html">History</a>
+            </div>
+        </div>
+        <table>
+            <thead>
+                <th>S.No</th>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Amount</th>
+                <th>Date</th>
+                <th>Action</th>
+            </thead>
+            <tbody id="expensebody">
+                
+            </tbody>
+            
+        </table>
+        <h3>Total rows: 0 expenses</h3>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
